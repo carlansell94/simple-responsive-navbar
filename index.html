@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Responsive Nav Bar</title>
+        <link href="navbar.css" rel="stylesheet">
+        <script src="navbar.js"></script>
+    </head>
+    <body>   
+        <main>
+            <header>
+                <a id="logo" href="/">
+                    <img src="logo.svg" alt="Logo">
+                    <div id="logo-text">
+                        <h1>Site Name</h1>
+                        <p>Site Tagline</p>
+                    </div>
+                </a>
+                <button type="button">
+                    <img src="assets/menu.svg" alt="Menu" />
+                </button>
+                <nav id="navbar">
+                    <ul>
+                        <li><a class="nav-link" href="#">Link</a></li>
+                        <li><a class="nav-link" href="#">Link 2</a></li>
+                        <li>
+                            <a class="nav-link" href="#">Link With Dropdown
+                                <div class="nav-link-icon-container">
+                                    <p class="nav-link-icon">&#9660;</p>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Option 1</a></li>
+                                <li><a href="#">Option 2</a></li>
+                                <li><a href="#">Option 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="search">
+                        <input type="text" placeholder="Search">
+                        <button type="submit">
+                            <img src="assets/search.svg" alt="Search" />
+                        </button>
+                    </form>
+                </nav>
+            </header>
+        </main>
+    </body>
+</html>
