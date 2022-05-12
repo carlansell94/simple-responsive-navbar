@@ -45,14 +45,24 @@ nav > ul {
     margin: 0 1rem 0 0;
 }
 
+nav > ul > li > div {
+    display: flex;
+}
+
 .nav-link {
     align-items: center;
     border-radius: 0.5rem;
     color: var(--header-font-colour);
     display: flex;
+    flex: 1;
     padding: 0.75rem;
     transition: var(--header-transition);
     justify-content: space-between;
+}
+
+.nav-link > a {
+    color: var(--header-font-colour);
+    width: 100%;
 }
 
 .nav-link:hover,
